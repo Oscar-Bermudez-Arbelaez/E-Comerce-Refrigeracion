@@ -1,0 +1,18 @@
+# Registro
+curl -X POST http://localhost:3000/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"email":"user@test.com","password":"User123!","name":"Test User"}'
+
+# Login
+curl -X POST http://localhost:3000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"user@demo.com","password":"User123!"}'
+
+# Listar productos
+curl http://localhost:3000/api/products?search=compresor
+
+# Agregar al carrito
+curl -X POST http://localhost:3000/api/cart/items \
+  -H "Content-Type: application/json" \
+  -H "Cookie: token=..." \
+  -d '{"productId":"...", "quantity":1}'

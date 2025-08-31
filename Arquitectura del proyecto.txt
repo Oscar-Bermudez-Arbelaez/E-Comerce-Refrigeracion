@@ -1,0 +1,89 @@
+project-ecommerce-refrigeracion/
+│
+├── .env.example
+├── README.md
+├── package.json
+├── package-lock.json
+├── ecosystem.config.js
+│
+├── .eslintrc.json
+├── .prettierrc.json
+│
+├── migrations/
+│   ├── 01_init.sql
+│
+├── seeds/
+│   ├── 01_brands.sql
+│   ├── 02_categories.sql
+│   ├── 03_products.sql
+│   ├── 04_users.sql
+│   ├── 05_addresses.sql
+│
+├── src/
+│   ├── server.js
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   ├── validate.js
+│   │   ├── csrf.js
+│   │   └── rateLimit.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── productController.js
+│   │   ├── cartController.js
+│   │   ├── orderController.js
+│   │   ├── profileController.js
+│   │   └── adminController.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── productRoutes.js
+│   │   ├── cartRoutes.js
+│   │   ├── orderRoutes.js
+│   │   ├── profileRoutes.js
+│   │   └── adminRoutes.js
+│   │
+│   ├── utils/
+│   │   ├── hash.js
+│   │   ├── jwt.js
+│   │   ├── session.js
+│   │   └── dbHelpers.js
+│   │
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── login.html
+│   │   ├── register.html
+│   │   ├── product-detail.html
+│   │   ├── cart.html
+│   │   ├── checkout.html
+│   │   ├── profile.html
+│   │   ├── admin.html
+│   │   │
+│   │   ├── css/
+│   │   │   ├── main.css
+│   │   │   ├── auth.css
+│   │   │   ├── cart.css
+│   │   │   ├── checkout.css
+│   │   │   └── admin.css
+│   │   │
+│   │   ├── js/
+│   │   │   ├── api.js
+│   │   │   ├── auth.js
+│   │   │   ├── cart.js
+│   │   │   ├── product.js
+│   │   │   ├── checkout.js
+│   │   │   ├── profile.js
+│   │   │   └── admin.js
+│   │   │
+│   │   └── images/
+│   │       └── placeholder.jpg
+│   │
+│   └── tests/
+│       ├── auth.test.js
+│       ├── cart.test.js
+│       └── order.test.js
+│
+└── curl-endpoints.txt
